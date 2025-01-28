@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Demande de Stage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulaire de Demande de Stage</h1>
+        <form id="stage-form">
+            <div class="form-group">
+                <label for="first-name">Prénom</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Nom</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="birth-date">Date de naissance</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Numéro de téléphone</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="class">Classe</label>
+                <input type="text" id="class" name="class" required>
+            </div>
+            <div class="form-group">
+                <label for="school">Établissement</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+            <div class="form-group">
+                <label for="stage-type">Type de stage souhaité</label>
+                <select id="stage-type" name="stage-type" required>
+                    <option value="">-- Sélectionner --</option>
+                    <option value="stage1">Stage 1</option>
+                    <option value="stage2">Stage 2</option>
+                    <option value="stage3">Stage 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit">Envoyer la demande</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
